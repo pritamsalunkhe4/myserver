@@ -1,0 +1,214 @@
+{
+  "layoutMap": {
+    "horizontal-scroll-widget": {
+      "styleId": "horizontal-scroll-widget-style"
+    },
+    "horizontal-scroll-header": {
+      "styleId": "horizontal-scroll-header-style",
+      "elements": [
+        {
+          "styleId": "horizontal-scroll-title-style",
+          "elements": [
+            {
+              "type": "text",
+              "node": {
+                "text": "widget-title"
+              },
+              "vars": [
+                "widget-title"
+              ]
+            },
+            {
+              "type": "text",
+              "node": {
+                "text": "widget-subtitle"
+              },
+              "vars": [
+                "widget-subtitle"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "node": {
+            "ctaText": "button-text"
+          },
+          "vars": [
+            "button-text"
+          ],
+          "cta": {
+            "ctaId": "see-all-cta"
+          }
+        }
+      ]
+    },
+    "horizontal-scroll-cards": {
+      "styleId": "horizontal-scroll-cards-style"
+    },
+    "vertical-card": {
+      "styleId": "vertical-card-style",
+      "elements": [
+        {
+          "styleId": "poster-card-style",
+          "elements": [
+            {
+              "type": "image",
+              "node": {
+                "imageUrl": "poster-image"
+              },
+              "vars": [
+                "poster-image"
+              ]
+            },
+            {
+              "styleId": "",
+              "type": "text",
+              "node": {
+                "text": "poster-tag"
+              },
+              "vars": [
+                "poster-tag"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "node": {
+            "imageUrl": "poster-rnr-image"
+          },
+          "vars": [
+            "poster-rnr-image"
+          ],
+          "cta": {
+            "ctaId": "rnr-cta"
+          }
+        },
+        {
+          "type": "text",
+          "node": {
+            "text": "event-title"
+          },
+          "vars": [
+            "event-title"
+          ]
+        },
+        {
+          "type": "text",
+          "node": {
+            "text": "event-meta"
+          },
+          "vars": [
+            "event-meta"
+          ]
+        }
+      ],
+      "cta": {
+        "ctaId": "vertical-event-cta"
+      }
+    },
+    "top-nav-item": {
+      "styleId": "top-nav-item-container-style",
+      "elements": [
+        {
+          "styleId": "top-nav-item-style",
+          "elements": [
+            {
+              "styleId": "top-nav-icon-style",
+              "type": "image",
+              "node": {
+                "imageUrl": "top-nav-icon-url"
+              },
+              "vars": [
+                "top-nav-icon-url"
+              ]
+            },
+            {
+              "styleId": "top-nav-label-style",
+              "type": "text",
+              "node": {
+                "text": "top-nav-label"
+              },
+              "vars": [
+                "top-nav-label"
+              ]
+            }
+          ]
+        },
+        {
+          "styleId": "top-nav-tag-style",
+          "type": "text",
+          "node": {
+            "text": "top-nav-tag"
+          },
+          "vars": [
+            "top-nav-tag"
+          ]
+        }
+      ],
+      "cta": {
+        "ctaId": "top-nav-cta-item-id"
+      }
+    },
+    "grid-widget": {
+      "styleId": "grid-widget-style"
+    }
+  },
+  "styleMap": {
+    "horizontal-scroll-widget-style": {
+      "containerType": "vertical"
+    },
+    "horizontal-scroll-header-style": {
+      "containerType": "horizontal"
+    },
+    "horizontal-scroll-cards-style": {
+      "containerType": "horizontal-scroll",
+      "margin": "4,0,4,0",
+      "contentPadding": "4,4,4,4"
+    },
+    "vertical-card-style": {
+      "containerType": "vertical"
+    },
+    "horizontal-scroll-title-style": {
+      "containerType": "vertical"
+    },
+    "poster-card-style": {
+      "containerType": "box"
+    },
+    "top-nav-item-container-style": {
+      "containerType": "box",
+      "padding": "2,2,2,2",
+      "width": 72,
+      "background": {
+        "colors": [
+          "#EEEEEE"
+        ]
+      }
+    },
+    "top-nav-item-style": {
+      "containerType": "vertical"
+    },
+    "top-nav-icon-style": {
+      "width": 48,
+      "height": 48
+    },
+    "top-nav-label-style": {
+      "maxLines": 2
+    },
+    "top-nav-tag-style": {
+      "background": {
+        "colors": [
+          "#FF0000"
+        ]
+      },
+      "fontColor": "#FFFFFF",
+      "fontSize": 10,
+      "verticalAlignment": "top",
+      "horizontalAlignment": "end"
+    },
+    "grid-widget-style": {
+      "containerType": "horizontal-grid"
+    }
+  }
+}
