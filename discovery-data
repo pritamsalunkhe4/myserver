@@ -1,0 +1,155 @@
+{
+  "sequence": [
+    "top-nav",
+    "widget-id-1"
+  ],
+  "widgets": {
+    "top-nav": {
+      "layoutId": "horizontal-scroll-cards",
+      "elements": [
+        {
+          "layoutId": "top-nav-item",
+          "dataMap": {
+            "top-nav-icon-url": "https://png.pngtree.com/element_our/png/20181227/movie-icon-which-is-designed-for-all-application-purpose-new-png_287896.jpg",
+            "top-nav-label": "Movies",
+            "top-nav-cta-item-id": {
+              "type": "router",
+              "url": "https://in.bookmyshow.com/explore/movies-mumbai",
+              "analytics": {
+                "event-type": "click",
+                "event-name": "top_nav_item_clicked"
+              }
+            }
+          }
+        },
+        {
+          "layoutId": "top-nav-item",
+          "dataMap": {
+            "top-nav-icon-url": "https://cdn-icons-png.flaticon.com/512/196/196557.png",
+            "top-nav-label": "HSBC Lounge",
+            "top-nav-tag": "NEW",
+            "top-nav-cta-item-id": {
+              "type": "router",
+              "url": "https://ent-lounge.bookmyshow.com/"
+            }
+          }
+        },
+        {
+          "layoutId": "top-nav-item",
+          "dataMap": {
+            "top-nav-icon-url": "https://png.pngtree.com/png-vector/20201112/ourmid/pngtree-live-streaming-icon-png-image_2419206.jpg",
+            "top-nav-label": "Stream",
+            "top-nav-cta-item-id": {
+              "type": "router",
+              "url": "stream-url-here"
+            }
+          }
+        },
+        {
+          "layoutId": "top-nav-item",
+          "dataMap": {
+            "top-nav-icon-url": "https://t3.ftcdn.net/jpg/03/01/43/92/360_F_301439209_vpF837oCGM1lp0cnC7stzCBn3th0dQ6O.jpg",
+            "top-nav-label": "Music Shows",
+            "top-nav-cta-item-id": {
+              "type": "router",
+              "url": "music-shows-url-here"
+            }
+          }
+        },
+        {
+          "layoutId": "top-nav-item",
+          "dataMap": {
+            "top-nav-icon-url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkciF5IORkrq1LMWf7yBzYXbQ71R7YEBKiFw&s",
+            "top-nav-label": "See All",
+            "top-nav-cta-item-id": {
+              "type": "router",
+              "url": "seeall-shows-url-here"
+            }
+          }
+        }
+      ]
+    },
+    "widget-id-1": {
+      "layoutId": "horizontal-scroll-widget",
+      "elements": [
+        {
+          "layoutId": "horizontal-scroll-header",
+          "dataMap": {
+            "widget-title": "Must-Attend Live Events",
+            "widget-subtitle": "Monday to Sunday, we got you covered",
+            "button-text": "See All >",
+            "see-all-cta": {
+              "type": "router",
+              "url": "navratri-url-here"
+            }
+          }
+        },
+        {
+          "layoutId": "horizontal-scroll-cards",
+          "elements": [
+            {
+              "layoutId": "vertical-card",
+              "dataMap": {
+                "poster-image": "poster image url here",
+                "poster-tag": "PROMOTED",
+                "poster-rnr-image": "poster rnr image url here",
+                "event-title": "Title here",
+                "event-meta": "Meta info here",
+                "vertical-event-cta": {
+                  "type": "router",
+                  "url": "falguni-url-here"
+                }
+              }
+            },
+            {
+              "layoutId": "vertical-card",
+              "dataMap": {
+                "poster-image": "poster image url here",
+                "poster-tag": "PROMOTED",
+                "poster-rnr-image": "poster rnr image url here",
+                "event-title": "Title here",
+                "event-meta": "Meta info here",
+                "vertical-event-cta": {
+                  "type": "router",
+                  "url": "xyz-url-here"
+                },
+                "rnr-cta": {
+                  "type": "router",
+                  "url": "rnr-url-xyz-event"
+                }
+              }
+            },
+            {
+              "layoutId": "vertical-card",
+              "dataMap": {
+                "poster-image": "poster image url here",
+                "poster-tag": "PROMOTED",
+                "poster-rnr-image": "poster rnr image url here",
+                "event-title": "Title here",
+                "event-meta": "Meta info here",
+                "vertical-event-cta": {
+                  "type": "router",
+                  "url": "darshan-url-here"
+                }
+              }
+            },
+            {
+              "layoutId": "vertical-card",
+              "dataMap": {
+                "poster-image": "poster image url here",
+                "poster-tag": "PROMOTED",
+                "poster-rnr-image": "poster rnr image url here",
+                "event-title": "Title here",
+                "event-meta": "Meta info here",
+                "vertical-event-cta": {
+                  "type": "router",
+                  "url": "bhoomi-url-here"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
