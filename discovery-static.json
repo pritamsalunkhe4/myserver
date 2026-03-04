@@ -1,214 +1,1889 @@
 {
-  "layoutMap": {
-    "horizontal-scroll-widget": {
-      "styleId": "horizontal-scroll-widget-style"
-    },
-    "horizontal-scroll-header": {
-      "styleId": "horizontal-scroll-header-style",
-      "elements": [
-        {
-          "styleId": "horizontal-scroll-title-style",
-          "elements": [
-            {
-              "type": "text",
-              "node": {
-                "text": "widget-title"
-              },
-              "vars": [
-                "widget-title"
-              ]
-            },
-            {
-              "type": "text",
-              "node": {
-                "text": "widget-subtitle"
-              },
-              "vars": [
-                "widget-subtitle"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "button",
-          "node": {
-            "ctaText": "button-text"
-          },
-          "vars": [
-            "button-text"
-          ],
-          "cta": {
-            "ctaId": "see-all-cta"
-          }
-        }
-      ]
-    },
-    "horizontal-scroll-cards": {
-      "styleId": "horizontal-scroll-cards-style"
-    },
-    "vertical-card": {
-      "styleId": "vertical-card-style",
-      "elements": [
-        {
-          "styleId": "poster-card-style",
-          "elements": [
-            {
-              "type": "image",
-              "node": {
-                "imageUrl": "poster-image"
-              },
-              "vars": [
-                "poster-image"
-              ]
-            },
-            {
-              "styleId": "",
-              "type": "text",
-              "node": {
-                "text": "poster-tag"
-              },
-              "vars": [
-                "poster-tag"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "node": {
-            "imageUrl": "poster-rnr-image"
-          },
-          "vars": [
-            "poster-rnr-image"
-          ],
-          "cta": {
-            "ctaId": "rnr-cta"
-          }
-        },
-        {
-          "type": "text",
-          "node": {
-            "text": "event-title"
-          },
-          "vars": [
-            "event-title"
-          ]
-        },
-        {
-          "type": "text",
-          "node": {
-            "text": "event-meta"
-          },
-          "vars": [
-            "event-meta"
-          ]
-        }
-      ],
-      "cta": {
-        "ctaId": "vertical-event-cta"
-      }
-    },
-    "top-nav-item": {
-      "styleId": "top-nav-item-container-style",
-      "elements": [
-        {
-          "styleId": "top-nav-item-style",
-          "elements": [
-            {
-              "styleId": "top-nav-icon-style",
-              "type": "image",
-              "node": {
-                "imageUrl": "top-nav-icon-url"
-              },
-              "vars": [
-                "top-nav-icon-url"
-              ]
-            },
-            {
-              "styleId": "top-nav-label-style",
-              "type": "text",
-              "node": {
-                "text": "top-nav-label"
-              },
-              "vars": [
-                "top-nav-label"
-              ]
-            }
-          ]
-        },
-        {
-          "styleId": "top-nav-tag-style",
-          "type": "text",
-          "node": {
-            "text": "top-nav-tag"
-          },
-          "vars": [
-            "top-nav-tag"
-          ]
-        }
-      ],
-      "cta": {
-        "ctaId": "top-nav-cta-item-id"
-      }
-    },
-    "grid-widget": {
-      "styleId": "grid-widget-style"
-    }
+  "metadata": {
+    "version": 1
   },
-  "styleMap": {
-    "horizontal-scroll-widget-style": {
-      "containerType": "vertical"
-    },
-    "horizontal-scroll-header-style": {
-      "containerType": "horizontal"
-    },
-    "horizontal-scroll-cards-style": {
-      "containerType": "horizontal-scroll",
-      "margin": "4,0,4,0",
-      "contentPadding": "4,4,4,4"
-    },
-    "vertical-card-style": {
-      "containerType": "vertical"
-    },
-    "horizontal-scroll-title-style": {
-      "containerType": "vertical"
-    },
-    "poster-card-style": {
-      "containerType": "box"
-    },
-    "top-nav-item-container-style": {
-      "containerType": "box",
-      "padding": "2,2,2,2",
-      "width": 72,
-      "background": {
-        "colors": [
-          "#EEEEEE"
-        ]
-      }
-    },
-    "top-nav-item-style": {
-      "containerType": "vertical"
-    },
-    "top-nav-icon-style": {
-      "width": 48,
-      "height": 48
-    },
-    "top-nav-label-style": {
-      "maxLines": 2
-    },
-    "top-nav-tag-style": {
-      "background": {
-        "colors": [
-          "#FF0000"
+  "data": {
+    "templateMap": {
+      "ad-home-card-container": {
+        "styleId": "carousal-container-style",
+        "elements": [
+          {
+            "type": "adtech",
+            "vars": [
+              "id",
+              "adtechId",
+              "aspectRatio"
+            ],
+            "node": {
+              "adtechId": "$adtechId$",
+              "aspectRatio": "$aspectRatio$",
+              "id": "$id$"
+            }
+          }
         ]
       },
-      "fontColor": "#FFFFFF",
-      "fontSize": 10,
-      "verticalAlignment": "top",
-      "horizontalAlignment": "end"
+      "amusement-card-container": {
+        "styleId": "amusement-card-container-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 2,
+              "imageUrl": "$image-url$"
+            }
+          },
+          {
+            "type": "image",
+            "styleId": "meta-image-style",
+            "vars": [
+              "meta-image-url"
+            ],
+            "node": {
+              "aspectRatio": 8.5,
+              "imageUrl": "$meta-image-url$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "amusement-card-title-text-style",
+            "vars": [
+              "title"
+            ],
+            "node": {
+              "maxLines": 1,
+              "text": "$title$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "amusement-card-lowestLevelCategory-text-style",
+            "vars": [
+              "lowestLevelCategory"
+            ],
+            "node": {
+              "text": "$lowestLevelCategory$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "amusement-card-price-text-style",
+            "vars": [
+              "price"
+            ],
+            "node": {
+              "text": "$price$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "amusement-card-tiny-text-style",
+            "vars": [
+              "l3l2l1CategoryTag"
+            ],
+            "node": {
+              "text": "$l3l2l1CategoryTag$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "amusement-card-tiny-text-style",
+            "vars": [
+              "leShowdateWithCity"
+            ],
+            "node": {
+              "text": "$leShowdateWithCity$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "amusement-card-closestVenue-text-style",
+            "vars": [
+              "closestVenue",
+              "venueDistance",
+              "distanceIconUrl"
+            ],
+            "node": {
+              "spans": [
+                {
+                  "type": "text",
+                  "text": "$closestVenue$",
+                  "styleId": "amusement-card-closestVenue-text-style"
+                },
+                {
+                  "type": "icon",
+                  "iconUrl": "$distanceIconUrl$",
+                  "styleId": "amusement-distance-icon-style"
+                },
+                {
+                  "type": "text",
+                  "text": "$venueDistance$",
+                  "styleId": "amusement-card-closestVenue-text-style"
+                }
+              ]
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "eventCta"
+        }
+      },
+      "browse-by-cinemas-item": {
+        "styleId": "browse-by-cinemas-item-style",
+        "cta": {
+          "ctaId": "cinemaCta"
+        },
+        "type": "image",
+        "node": {
+          "aspectRatio": 5.12,
+          "imageUrl": "$image-url$"
+        },
+        "vars": [
+          "image-url"
+        ]
+      },
+      "browse-by-venues-mobile-container": {
+        "styleId": "vertical-plain-container-style",
+        "elements": [
+          {
+            "type": "image",
+            "styleId": "movie-poster-style",
+            "vars": [
+              "imageUrl"
+            ],
+            "node": {
+              "aspectRatio": 4.8,
+              "imageUrl": "$imageUrl$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "browseByVenuesCta"
+        }
+      },
+      "carousel-card-container": {
+        "styleId": "carousel-card-container-style",
+        "elements": [
+          {
+            "type": "adtech",
+            "vars": [
+              "id",
+              "adtechId"
+            ],
+            "node": {
+              "adtechId": "$adtechId$",
+              "id": "$id$"
+            }
+          }
+        ]
+      },
+      "category-grid-item": {
+        "styleId": "category-grid-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 1.45,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "categoryCta"
+        }
+      },
+      "custom-bmsclub-mobile-container": {
+        "styleId": "custom-bmsclub-mobile-container-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "imageUrl"
+            ],
+            "node": {
+              "aspectRatio": 6,
+              "imageUrl": "$imageUrl$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "bmsCta"
+        }
+      },
+      "custom-bmsclub-mobile-v2-container": {
+        "styleId": "custom-bmsclub-mobile-v2-container-style",
+        "elements": [
+          {
+            "type": "adtech",
+            "vars": [
+              "id",
+              "adtechId"
+            ],
+            "node": {
+              "adtechId": "$adtechId$",
+              "id": "$id$"
+            }
+          }
+        ]
+      },
+      "drop-off-card": {
+        "styleId": "drop-off-card-container-style",
+        "elements": [
+          {
+            "styleId": "drop-off-horizontal-container-style",
+            "elements": [
+              {
+                "type": "text",
+                "styleId": "drop-off-widget-title-style",
+                "vars": [
+                  "widget-title"
+                ],
+                "node": {
+                  "text": "$widget-title$"
+                }
+              },
+              {
+                "type": "image",
+                "styleId": "explore-cat-icon-style",
+                "cta": {
+                  "ctaId": "removeCta"
+                },
+                "vars": [
+                  "dismiss-icon"
+                ],
+                "node": {
+                  "aspectRatio": 1,
+                  "imageUrl": "$dismiss-icon$"
+                }
+              }
+            ]
+          },
+          {
+            "styleId": "vertical-widget-container-style",
+            "cta": {
+              "ctaId": "continueCta"
+            },
+            "elements": [
+              {
+                "styleId": "carousel-horizontal-container-style",
+                "elements": [
+                  {
+                    "type": "image",
+                    "styleId": "drop-off-poster-style",
+                    "vars": [
+                      "image-url"
+                    ],
+                    "node": {
+                      "aspectRatio": 0.6667,
+                      "imageUrl": "$image-url$"
+                    }
+                  },
+                  {
+                    "styleId": "vertical-plain-container-style",
+                    "elements": [
+                      {
+                        "type": "text",
+                        "styleId": "drop-off-title-style",
+                        "vars": [
+                          "title"
+                        ],
+                        "node": {
+                          "maxLines": 2,
+                          "text": "$title$"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "styleId": "drop-off-subtitle-text-style",
+                        "vars": [
+                          "languageFormat"
+                        ],
+                        "node": {
+                          "maxLines": 2,
+                          "text": "$languageFormat$"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "styleId": "drop-off-venues-text-style",
+                        "vars": [
+                          "venues"
+                        ],
+                        "node": {
+                          "maxLines": 1,
+                          "text": "$venues$"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "styleId": "drop-off-body-info-text-style",
+                        "vars": [
+                          "dropoff-info"
+                        ],
+                        "node": {
+                          "maxLines": 2,
+                          "text": "$dropoff-info$"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "styleId": "drop-off-body-time-text-style",
+                        "vars": [
+                          "dropoff-time"
+                        ],
+                        "node": {
+                          "maxLines": 2,
+                          "text": "$dropoff-time$"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "styleId": "drop-off-body-fastfilling-text-style",
+                        "vars": [
+                          "dropoff-fastfilling"
+                        ],
+                        "node": {
+                          "maxLines": 2,
+                          "text": "$dropoff-fastfilling$"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "styleId": "drop-off-body-tickets-text-style",
+                        "vars": [
+                          "dropoff-tickets"
+                        ],
+                        "node": {
+                          "maxLines": 2,
+                          "text": "$dropoff-tickets$"
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "styleId": "drop-off-body-offer-text-style",
+                        "vars": [
+                          "dropoff-offer"
+                        ],
+                        "node": {
+                          "maxLines": 2,
+                          "text": "$dropoff-offer$"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "styleId": "horizontal-plain-container-style",
+                "elements": [
+                  {
+                    "type": "button",
+                    "styleId": "carousel-button-style",
+                    "vars": [
+                      "button-text"
+                    ],
+                    "node": {
+                      "text": "$button-text$",
+                      "type": "primary"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "drop-off-scroll-container": {
+        "styleId": "drop-off-scroll-container-style"
+      },
+      "ehp-adventure-events-mobile-item": {
+        "styleId": "ehp-adventure-events-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.6667,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpAdventureEventsCta"
+        }
+      },
+      "ehp-amusement-parks-mobile-item": {
+        "styleId": "ehp-amusement-parks-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.6667,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpAmusementParksCta"
+        }
+      },
+      "ehp-best-events-mobile-item": {
+        "styleId": "ehp-best-events-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.6667,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpBestEventsCta"
+        }
+      },
+      "ehp-comedy-shows-mobile-item": {
+        "styleId": "ehp-comedy-shows-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.6667,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpComedyShowsCta"
+        }
+      },
+      "ehp-explore-more-mobile-item": {
+        "styleId": "ehp-explore-more-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.67,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpExploreMoreCta"
+        }
+      },
+      "ehp-music-shows-mobile-item": {
+        "styleId": "ehp-music-shows-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.67,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpMusicShowsCta"
+        }
+      },
+      "ehp-network-learn-engage-mobile-item": {
+        "styleId": "ehp-network-learn-engage-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.67,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpNetworkLearnEngageCta"
+        }
+      },
+      "ehp-perfect-mix-mobile-item": {
+        "styleId": "ehp-perfect-mix-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.67,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpPerfectMixCta"
+        }
+      },
+      "ehp-plays-genre-mobile-item": {
+        "styleId": "ehp-plays-genre-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.67,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpPlaysGenreCta"
+        }
+      },
+      "ehp-sports-events-mobile-item": {
+        "styleId": "ehp-sports-events-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.67,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpSportsEventsCta"
+        }
+      },
+      "ehp-top-nav-mobile-item": {
+        "styleId": "ehp-top-nav-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.67,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpTopNavCta"
+        }
+      },
+      "ehp-weekend-guide-mobile-item": {
+        "styleId": "ehp-weekend-guide-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.67,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "ehpWeekendGuideCta"
+        }
+      },
+      "event-card-container": {
+        "styleId": "movie-card-container-style",
+        "elements": [
+          {
+            "type": "image",
+            "styleId": "movie-poster-style",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.6667,
+              "imageUrl": "$image-url$"
+            }
+          },
+          {
+            "type": "image",
+            "styleId": "meta-image-style",
+            "vars": [
+              "meta-image-url"
+            ],
+            "node": {
+              "aspectRatio": 8.5,
+              "imageUrl": "$meta-image-url$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "horizontal-rail-card-title-text-style",
+            "vars": [
+              "title"
+            ],
+            "node": {
+              "text": "$title$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "horizontal-rail-card-subtitle-text-style",
+            "vars": [
+              "subtitle"
+            ],
+            "node": {
+              "text": "$subtitle$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "horizontal-rail-tiny-text-style",
+            "vars": [
+              "closestVenue"
+            ],
+            "node": {
+              "text": "$closestVenue$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "horizontal-rail-tiny-text-style",
+            "vars": [
+              "lowestLevelCategory"
+            ],
+            "node": {
+              "text": "$lowestLevelCategory$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "horizontal-rail-tiny-text-style",
+            "vars": [
+              "languages"
+            ],
+            "node": {
+              "text": "$languages$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "eventCta"
+        }
+      },
+      "explore-all-categories-item": {
+        "styleId": "explore-all-categories-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 1.46,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "exploreAllCategoriesCta"
+        }
+      },
+      "explore-categories-container": {
+        "styleId": "explore-categories-container-style",
+        "elements": [
+          {
+            "styleId": "horizontal-centre-container-style",
+            "elements": [
+              {
+                "type": "image",
+                "styleId": "explore-cat-icon-style",
+                "vars": [
+                  "icon-url"
+                ],
+                "node": {
+                  "aspectRatio": 1,
+                  "imageUrl": "$icon-url$"
+                }
+              },
+              {
+                "type": "text",
+                "styleId": "explore-cat-title-text-style",
+                "vars": [
+                  "title"
+                ],
+                "node": {
+                  "text": "$title$"
+                }
+              }
+            ]
+          },
+          {
+            "type": "divider",
+            "styleId": "divider-style",
+            "node": {
+              "axis": "horizontal",
+              "type": "solid"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "exploreCta"
+        }
+      },
+      "footer-image-widget-mweb-container": {
+        "styleId": "bms-logo-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 6.92,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ]
+      },
+      "header-action-bmsclub": {
+        "styleId": "header-action-item-style",
+        "elements": [
+          {
+            "templateId": "header-action-icon",
+            "styleId": "header-action-bmsclub-style"
+          },
+          {
+            "type": "text",
+            "styleId": "header-action-badge-style",
+            "vars": [
+              "badgeCount"
+            ],
+            "node": {
+              "text": "$badgeCount$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "actionCta"
+        }
+      },
+      "header-action-icon": {
+        "styleId": "header-action-icon-style",
+        "type": "image",
+        "node": {
+          "aspectRatio": 1,
+          "imageUrl": "$imageUrl$"
+        },
+        "vars": [
+          "imageUrl"
+        ]
+      },
+      "header-action-item": {
+        "styleId": "header-action-item-style",
+        "elements": [
+          {
+            "templateId": "header-action-icon"
+          },
+          {
+            "type": "text",
+            "styleId": "header-action-badge-style",
+            "vars": [
+              "badgeCount"
+            ],
+            "node": {
+              "text": "$badgeCount$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "actionCta"
+        }
+      },
+      "header-background-image": {
+        "styleId": "header-background-image-style",
+        "type": "image",
+        "node": {
+          "aspectRatio": 3.2,
+          "imageUrl": "$header-background$"
+        },
+        "vars": [
+          "header-background"
+        ]
+      },
+      "header-container": {
+        "styleId": "header-container-style"
+      },
+      "header-left-container": {
+        "styleId": "header-left-container-style",
+        "elements": [
+          {
+            "type": "text",
+            "styleId": "toolbar-title-style",
+            "vars": [
+              "title"
+            ],
+            "node": {
+              "text": "$title$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "toolbar-subtitle-style",
+            "cta": {
+              "ctaId": "selectRegionCta"
+            },
+            "vars": [
+              "subtitle"
+            ],
+            "node": {
+              "text": "$subtitle$"
+            }
+          }
+        ]
+      },
+      "header-toolbar-container": {
+        "styleId": "header-toolbar-container-style"
+      },
+      "hny-item": {
+        "styleId": "hny-item-style",
+        "elements": [
+          {
+            "styleId": "hny-image-container-style",
+            "elements": [
+              {
+                "type": "image",
+                "vars": [
+                  "imageUrl"
+                ],
+                "node": {
+                  "aspectRatio": 0.75,
+                  "imageUrl": "$imageUrl$"
+                }
+              }
+            ],
+            "actions": {
+              "onVisible": {
+                "ctaId": "scaleAnimation"
+              }
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "hnyCta"
+        }
+      },
+      "horizontal-carousel-container": {
+        "styleId": "horizontal-carousel-container-style"
+      },
+      "horizontal-carousel-container-sonu": {
+        "styleId": "horizontal-carousel-container-style"
+      },
+      "horizontal-fixed-grid-container": {
+        "styleId": "horizontal-plain-container-style"
+      },
+      "horizontal-grid-container": {
+        "styleId": "horizontal-grid-container-style"
+      },
+      "horizontal-rail-container": {
+        "styleId": "horizontal-rail-container-style"
+      },
+      "horizontal-scroll-cards": {
+        "styleId": "horizontal-scroll-cards-style"
+      },
+      "horizontal-scroll-container": {
+        "styleId": "horizontal-scroll-container-style"
+      },
+      "hyperlocation-nudge": {
+        "styleId": "hyperlocation-nudge-style",
+        "elements": [
+          {
+            "type": "text",
+            "styleId": "location-nudge-text-style",
+            "vars": [
+              "title"
+            ],
+            "node": {
+              "maxLines": 1,
+              "text": "$title$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "actionCta"
+        }
+      },
+      "image-container": {
+        "styleId": "banner-container-style",
+        "elements": [
+          {
+            "type": "image",
+            "styleId": "movie-poster-style",
+            "vars": [
+              "imageUrl"
+            ],
+            "node": {
+              "aspectRatio": 2,
+              "imageUrl": "$imageUrl$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "bannerCta"
+        }
+      },
+      "marquee-card-container": {
+        "styleId": "movie-card-container-style",
+        "elements": [
+          {
+            "type": "image",
+            "styleId": "movie-poster-style",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 1.77,
+              "imageUrl": "$image-url$"
+            }
+          },
+          {
+            "type": "video",
+            "styleId": "movie-poster-style",
+            "vars": [
+              "video-url",
+              "thumbnail-url"
+            ],
+            "node": {
+              "aspectRatio": 1.77,
+              "thumbnailUrl": "$thumbnail-url$",
+              "videoUrl": "$video-url$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "marquee-card-title-text-style",
+            "vars": [
+              "title"
+            ],
+            "node": {
+              "text": "$title$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "marqueeCta"
+        }
+      },
+      "marquee-card-video-container": {
+        "styleId": "movie-card-container-style",
+        "elements": [
+          {
+            "type": "video",
+            "vars": [
+              "video-url",
+              "thumbnail-url"
+            ],
+            "node": {
+              "aspectRatio": 2.5,
+              "thumbnailUrl": "$thumbnail-url$",
+              "videoUrl": "$video-url$"
+            }
+          },
+          {
+            "type": "text",
+            "vars": [
+              "title"
+            ],
+            "node": {
+              "text": "$title$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "marqueeCta"
+        }
+      },
+      "movie-card-container": {
+        "styleId": "movie-card-container-style",
+        "elements": [
+          {
+            "type": "image",
+            "styleId": "movie-poster-style",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.6667,
+              "imageUrl": "$image-url$"
+            }
+          },
+          {
+            "type": "image",
+            "styleId": "meta-image-style",
+            "vars": [
+              "meta-image-url"
+            ],
+            "node": {
+              "aspectRatio": 8.5,
+              "imageUrl": "$meta-image-url$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "horizontal-rail-card-title-text-style",
+            "vars": [
+              "title"
+            ],
+            "node": {
+              "text": "$title$"
+            }
+          },
+          {
+            "type": "text",
+            "styleId": "horizontal-rail-card-subtitle-text-style",
+            "vars": [
+              "subtitle"
+            ],
+            "node": {
+              "text": "$subtitle$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "movieCta"
+        }
+      },
+      "movie-drop-off-card-container": {
+        "styleId": "movie-drop-off-card-container-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.6667,
+              "imageUrl": "$image-url$"
+            }
+          },
+          {
+            "type": "text",
+            "vars": [
+              "title"
+            ],
+            "node": {
+              "imageUrl": "$title$"
+            }
+          },
+          {
+            "type": "text",
+            "vars": [
+              "subtitle"
+            ],
+            "node": {
+              "imageUrl": "$subtitle$"
+            }
+          },
+          {
+            "type": "text",
+            "vars": [
+              "no-of-cinemas"
+            ],
+            "node": {
+              "imageUrl": "$no-of-cinemas$"
+            }
+          },
+          {
+            "type": "text",
+            "vars": [
+              "showtime"
+            ],
+            "node": {
+              "imageUrl": "$showtime$"
+            }
+          },
+          {
+            "type": "text",
+            "vars": [
+              "min-price"
+            ],
+            "node": {
+              "imageUrl": "$min-price$"
+            }
+          },
+          {
+            "type": "text",
+            "vars": [
+              "showdate"
+            ],
+            "node": {
+              "imageUrl": "$showdate$"
+            }
+          },
+          {
+            "type": "button",
+            "vars": [
+              "button-text"
+            ],
+            "node": {
+              "imageUrl": "$button-text$"
+            }
+          },
+          {
+            "type": "cta",
+            "vars": [
+              "button-cta"
+            ],
+            "node": {
+              "imageUrl": "$button-cta$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "dropOffCta"
+        }
+      },
+      "push-notification-hp-non-li-nudge-container": {
+        "styleId": "vertical-plain-container-style",
+        "elements": [
+          {
+            "type": "image",
+            "styleId": "movie-poster-style",
+            "vars": [
+              "imageUrl"
+            ],
+            "node": {
+              "aspectRatio": 6,
+              "imageUrl": "$imageUrl$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "pushNotificationHpNonLiNudgeCta"
+        }
+      },
+      "top-nav-item": {
+        "styleId": "top-nav-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "imageUrl"
+            ],
+            "node": {
+              "aspectRatio": 1,
+              "imageUrl": "$imageUrl$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "topNavCta"
+        }
+      },
+      "tvod-card-container": {
+        "styleId": "vertical-plain-container-style",
+        "elements": [
+          {
+            "styleId": "carousel-horizontal-container-style",
+            "elements": [
+              {
+                "type": "image",
+                "styleId": "tvod-movie-poster-style",
+                "vars": [
+                  "image-url"
+                ],
+                "node": {
+                  "aspectRatio": 0.6667,
+                  "imageUrl": "$image-url$"
+                }
+              },
+              {
+                "styleId": "vertical-tvod-carousel-item-style",
+                "elements": [
+                  {
+                    "type": "text",
+                    "styleId": "tvod-title-text-style",
+                    "vars": [
+                      "title"
+                    ],
+                    "node": {
+                      "maxLines": 2,
+                      "text": "$title$"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "styleId": "tvod-durationGenresCertification-text-style",
+                    "vars": [
+                      "durationGenresCertification"
+                    ],
+                    "node": {
+                      "maxLines": 2,
+                      "text": "$durationGenresCertification$"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "styleId": "tvod-tvodDimensionsLanguages-text-style",
+                    "vars": [
+                      "tvodDimensionsLanguages"
+                    ],
+                    "node": {
+                      "maxLines": 2,
+                      "text": "$tvodDimensionsLanguages$"
+                    }
+                  },
+                  {
+                    "type": "text",
+                    "styleId": "tvod-synopsis-text-style",
+                    "vars": [
+                      "synopsis"
+                    ],
+                    "node": {
+                      "maxLines": 3,
+                      "text": "$synopsis$"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "styleId": "horizontal-plain-container-style",
+            "elements": [
+              {
+                "type": "button",
+                "styleId": "carousel-button-style",
+                "vars": [
+                  "button-text"
+                ],
+                "node": {
+                  "text": "$button-text$",
+                  "type": "secondary"
+                }
+              }
+            ]
+          }
+        ],
+        "cta": {
+          "ctaId": "tvodCta"
+        }
+      },
+      "vertical-master-container": {
+        "styleId": "vertical-widget-container-style",
+        "elements": [
+          {
+            "templateId": "widget-header-container"
+          },
+          {
+            "templateId": "horizontal-rail-container2",
+            "elements": [
+              {
+                "templateId": "movie-card-container"
+              }
+            ]
+          }
+        ]
+      },
+      "vertical-plain-widget-container": {
+        "styleId": "vertical-plain-container-style"
+      },
+      "vertical-widget-container": {
+        "styleId": "vertical-widget-container-style"
+      },
+      "week-grid-item": {
+        "styleId": "week-grid-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "styleId": "grid-item-poster-style",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 1,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "gridCta"
+        }
+      },
+      "widget-header-container": {
+        "styleId": "widget-header-container-style",
+        "elements": [
+          {
+            "styleId": "widget-header-title-style",
+            "elements": [
+              {
+                "type": "text",
+                "styleId": "widget-title-text-style",
+                "vars": [
+                  "title"
+                ],
+                "node": {
+                  "text": "$title$"
+                }
+              },
+              {
+                "type": "text",
+                "styleId": "widget-subtitle-text-style",
+                "vars": [
+                  "subtitle"
+                ],
+                "node": {
+                  "text": "$subtitle$"
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "styleId": "see-more-text-style",
+            "cta": {
+              "ctaId": "viewMoreCta"
+            },
+            "vars": [
+              "cta-view-more"
+            ],
+            "node": {
+              "text": "$cta-view-more$"
+            }
+          }
+        ]
+      },
+      "widget-plays-language-mobile-item": {
+        "styleId": "widget-plays-language-mobile-item-style",
+        "elements": [
+          {
+            "type": "image",
+            "vars": [
+              "image-url"
+            ],
+            "node": {
+              "aspectRatio": 0.6667,
+              "imageUrl": "$image-url$"
+            }
+          }
+        ],
+        "cta": {
+          "ctaId": "widgetPlaysLanguageCta"
+        }
+      }
     },
-    "grid-widget-style": {
-      "containerType": "horizontal-grid"
+    "styleMap": {
+      "amusement-card-closestVenue-text-style": {
+        "margin": "4,12,8,12",
+        "styleId": "carousel-tiny-text-style"
+      },
+      "amusement-card-container-style": {
+        "border": {
+          "thickness": "1,1,1,1",
+          "gradient": {
+            "colors": [
+              {
+                "color": "#E5E5E5"
+              }
+            ]
+          }
+        },
+        "containerType": "vertical",
+        "cornerRadius": "12,12,12,12",
+        "margin": "8,8,8,8",
+        "padding": "0,0,4,0"
+      },
+      "amusement-card-lowestLevelCategory-text-style": {
+        "font": "tiny-regular",
+        "fontColor": "#515B85",
+        "margin": "4,12,8,12"
+      },
+      "amusement-card-price-text-style": {
+        "font": "small-bold",
+        "fontColor": "#515B85",
+        "margin": "2,12,2,12"
+      },
+      "amusement-card-tiny-text-style": {
+        "margin": "4,12,8,12",
+        "styleId": "carousel-tiny-text-style"
+      },
+      "amusement-card-title-text-style": {
+        "font": "large-medium",
+        "fontColor": "#3B4261",
+        "margin": "12,12,4,12"
+      },
+      "amusement-distance-icon-style": {
+        "fontColor": "#FFD700",
+        "fontSize": 12
+      },
+      "amusement-park-rail-container": {
+        "styleId": "horizontal-rail-container-style",
+        "visibleItems": 1.1
+      },
+      "banner-container-style": {
+        "containerType": "box",
+        "cornerRadius": "8,8,8,8",
+        "margin": "16,16,16,16"
+      },
+      "bms-logo-style": {
+        "containerType": "box",
+        "margin": "0,0,16,0"
+      },
+      "browse-by-cinemas-item-style": {
+        "cornerRadius": "12,12,12,12",
+        "margin": "0,16,28,16",
+        "styleId": "vertical-plain-container-style"
+      },
+      "carousal-container-style": {
+        "containerType": "box",
+        "cornerRadius": "8,8,8,8",
+        "margin": "16,16,16,16"
+      },
+      "carousel-button-style": {
+        "margin": "0,8,0,8",
+        "weight": 2
+      },
+      "carousel-card-container-style": {
+        "containerType": "vertical",
+        "margin": "0,4,0,4"
+      },
+      "carousel-card-image-style": {
+        "aspectRatio": 1.77,
+        "cornerRadius": "8,8,8,8",
+        "margin": "0,4,0,4"
+      },
+      "carousel-card-text-style": {
+        "fontColor": "#222222",
+        "fontSize": 14,
+        "margin": "2,8,2,8"
+      },
+      "carousel-container": {
+        "styleId": "horizontal-rail-container-style",
+        "visibleItems": 1.1
+      },
+      "carousel-horizontal-container-style": {
+        "margin": "0,16,0,16",
+        "styleId": "horizontal-plain-container-style",
+        "weightSum": 2
+      },
+      "carousel-movie-poster-style": {
+        "cornerRadius": "8,8,8,8",
+        "weight": 2
+      },
+      "carousel-tiny-text-style": {
+        "font": "tiny-regular",
+        "fontColor": "#515B85"
+      },
+      "category-grid-item-style": {
+        "containerType": "vertical",
+        "cornerRadius": "8,8,8,8",
+        "margin": "8,8,8,8"
+      },
+      "custom-bmsclub-mobile-container-style": {
+        "margin": "0,0,16,0",
+        "styleId": "vertical-plain-container-style"
+      },
+      "divider-style": {
+        "margin": "16,16,16,16",
+        "strokeColor": "#9e9e9e"
+      },
+      "drop-off-body-fastfilling-text-style": {
+        "font": "small-medium",
+        "fontColor": "#D24519"
+      },
+      "drop-off-body-info-text-style": {
+        "font": "small-bold",
+        "fontColor": "#404040"
+      },
+      "drop-off-body-offer-text-style": {
+        "font": "small-medium",
+        "fontColor": "#1FAD3E"
+      },
+      "drop-off-body-tickets-text-style": {
+        "font": "tiny-medium",
+        "fontColor": "#C99303"
+      },
+      "drop-off-body-time-text-style": {
+        "font": "small-medium",
+        "fontColor": "#1FAD3E"
+      },
+      "drop-off-card-container-style": {
+        "background": {
+          "gradient": {
+            "type": "topLeft-bottomRight",
+            "colors": [
+              {
+                "color": "#EEF4FC"
+              },
+              {
+                "color": "#FCEDE3"
+              }
+            ]
+          }
+        },
+        "containerType": "vertical",
+        "cornerRadius": "12,12,12,12",
+        "margin": "16,16,16,0"
+      },
+      "drop-off-horizontal-container-style": {
+        "margin": "16,16,0,16",
+        "styleId": "horizontal-plain-container-style"
+      },
+      "drop-off-poster-style": {
+        "cornerRadius": "8,8,8,8",
+        "margin": "0,12,12,0",
+        "width": 70
+      },
+      "drop-off-scroll-container-style": {
+        "contentPadding": "0,0,0,16",
+        "styleId": "horizontal-rail-container-style",
+        "visibleItems": 1.15
+      },
+      "drop-off-subtitle-text-style": {
+        "font": "extratiny-medium",
+        "fontColor": "#525252",
+        "margin": "0,0,12,0"
+      },
+      "drop-off-title-style": {
+        "font": "small-bold",
+        "fontColor": "#404040"
+      },
+      "drop-off-venues-text-style": {
+        "font": "tiny-medium",
+        "fontColor": "#666666"
+      },
+      "drop-off-widget-title-style": {
+        "font": "body-bold",
+        "fontColor": "#1A1A1A",
+        "weight": 1
+      },
+      "error-description-style": {
+        "font": "small-regular",
+        "textAlign": "center"
+      },
+      "error-title-style": {
+        "font": "small-medium",
+        "margin": "8,0,8,0",
+        "textAlign": "center"
+      },
+      "error-widget-style": {
+        "containerType": "vertical",
+        "horizontalAlignment": "center",
+        "margin": "16,36,16,36",
+        "verticalAlignment": "center"
+      },
+      "explore-cat-icon-style": {
+        "contentScale": "fit",
+        "height": 24
+      },
+      "explore-cat-title-text-style": {
+        "font": "small-regular",
+        "fontColor": "#DC354B"
+      },
+      "explore-categories-container-style": {
+        "containerType": "vertical",
+        "margin": "16,0,16,0"
+      },
+      "header-action-badge-style": {
+        "backgroundColor": "#F44336",
+        "cornerRadius": "24,24,24,24",
+        "fontColor": "#FFFFFF",
+        "margin": "0,4,0,0",
+        "padding": "2,2,2,2",
+        "selfAlignment": "top-end"
+      },
+      "header-action-bmsclub-style": {
+        "aspectRatio": 1.36,
+        "height": 24
+      },
+      "header-action-icon-style": {
+        "aspectRatio": 1,
+        "height": 40,
+        "padding": "0,8,0,8",
+        "width": 40
+      },
+      "header-action-item-style": {
+        "containerType": "box"
+      },
+      "header-background-image-style": {
+        "contentScale": "fill",
+        "fillWidth": true
+      },
+      "header-container-style": {
+        "containerType": "box",
+        "maxHeight": 64,
+        "verticalAlignment": "bottom"
+      },
+      "header-left-container-style": {
+        "containerType": "vertical",
+        "margin": "0,16,0,16",
+        "weight": 1
+      },
+      "header-toolbar-container-style": {
+        "containerType": "horizontal",
+        "insets": "statusBars",
+        "margin": "0,0,16,0",
+        "verticalAlignment": "center"
+      },
+      "hny-animation-style": {
+        "animation": {
+          "scaleX": 1.2,
+          "scaleY": 1.2
+        }
+      },
+      "hny-header-item-style": {
+        "weight": 1
+      },
+      "hny-horizontal-container-style": {
+        "containerType": "horizontal-scroll",
+        "visibleItems": 5,
+        "weightSum": 6
+      },
+      "hny-image-container-style": {
+        "containerType": "vertical",
+        "height": 100,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "center",
+        "width": 100
+      },
+      "hny-item-style": {
+        "containerType": "vertical",
+        "height": 120,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "center",
+        "width": 120
+      },
+      "horizontal-carousel-container-style": {
+        "carouselProps": {
+          "colors": {
+            "active": "#111111",
+            "inactive": "#999999"
+          },
+          "autoScrollDuration": 3000
+        },
+        "containerType": "carousel",
+        "contentPadding": "16,4,16,4"
+      },
+      "horizontal-centre-container-style": {
+        "containerType": "horizontal",
+        "fillWidth": true,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "center"
+      },
+      "horizontal-grid-container-style": {
+        "containerType": "horizontal-grid",
+        "contentPadding": "0,8,0,8",
+        "itemAspectRatio": 1.46,
+        "margin": "8,0,0,0",
+        "spanCount": 2,
+        "visibleItems": 2.25
+      },
+      "horizontal-plain-container-style": {
+        "containerType": "horizontal"
+      },
+      "horizontal-rail-card-subtitle-text-style": {
+        "font": "extratiny-regular",
+        "fontColor": "#666666"
+      },
+      "horizontal-rail-card-title-text-style": {
+        "font": "small-regular",
+        "fontColor": "#333333",
+        "margin": "0,0,2,0"
+      },
+      "horizontal-rail-container-style": {
+        "containerType": "horizontal-scroll",
+        "contentPadding": "0,8,0,8",
+        "margin": "8,0,0,0",
+        "visibleItems": 2.5
+      },
+      "horizontal-rail-tiny-text-style": {
+        "font": "tiny-regular",
+        "fontColor": "#555555"
+      },
+      "horizontal-scroll-cards-style": {
+        "containerType": "horizontal-scroll",
+        "contentPadding": "0,8,0,8",
+        "margin": "16,0,16,0",
+        "visibleItems": 5.5
+      },
+      "horizontal-week-grid-container-style": {
+        "containerType": "horizontal-grid",
+        "contentPadding": "0,16,0,16",
+        "horizontalSpacing": 16,
+        "itemAspectRatio": 1,
+        "margin": "16,0,0,0",
+        "spanCount": 1,
+        "visibleItems": 3
+      },
+      "hyperlocation-nudge-style": {
+        "backgroundColor": "#3E6EEA",
+        "containerType": "box",
+        "cornerRadius": "0,0,8,8",
+        "fillWidth": true,
+        "padding": "8,16,8,16"
+      },
+      "location-nudge-text-style": {
+        "fillWidth": true,
+        "font": "tiny-regular",
+        "fontColor": "#FFFFFF"
+      },
+      "marquee-card-title-text-style": {
+        "font": "small-regular",
+        "fontColor": "#222222",
+        "margin": "6,0,0,0"
+      },
+      "marquee-widget-styles": {
+        "containerType": "horizontal-scroll",
+        "padding": "0,0,0,16",
+        "visibleItems": 1.1
+      },
+      "meta-image-style": {
+        "margin": "4,0,4,0"
+      },
+      "movie-card-container-style": {
+        "containerType": "vertical",
+        "margin": "8,8,8,8"
+      },
+      "movie-poster-style": {
+        "cornerRadius": "12,12,12,12"
+      },
+      "see-more-text-style": {
+        "fontColor": "#DC3558"
+      },
+      "toolbar-subtitle-style": {
+        "font": "small-regular",
+        "fontColor": "#DC354B"
+      },
+      "toolbar-title-style": {
+        "font": "h5-bold"
+      },
+      "top-events-card-container-style": {
+        "cornerRadius": "20,20,20,20",
+        "styleId": "amusement-card-container-style"
+      },
+      "top-nav-item-style": {
+        "containerType": "vertical",
+        "height": 72,
+        "width": 72
+      },
+      "tvod-durationGenresCertification-text-style": {
+        "margin": "0,0,4,0",
+        "styleId": "tvod-small-text-style"
+      },
+      "tvod-movie-poster-style": {
+        "border": {
+          "thickness": "1,1,1,1",
+          "gradient": {
+            "colors": [
+              {
+                "color": "#E5E5E5"
+              }
+            ]
+          }
+        },
+        "cornerRadius": "12,12,12,12",
+        "margin": "0,0,16,0",
+        "weight": 1
+      },
+      "tvod-small-text-style": {
+        "font": "small-regular",
+        "fontColor": "#333333"
+      },
+      "tvod-synopsis-text-style": {
+        "margin": "0,0,2,0",
+        "styleId": "tvod-small-text-style"
+      },
+      "tvod-title-text-style": {
+        "font": "h5-bold",
+        "fontColor": "#1A1A1A",
+        "margin": "0,0,4,0"
+      },
+      "tvod-tvodDimensionsLanguages-text-style": {
+        "margin": "0,0,16,0",
+        "styleId": "tvod-small-text-style"
+      },
+      "vertical-adtech-hero-widget-container-style": {
+        "border": {
+          "thickness": "1,1,1,1",
+          "gradient": {
+            "colors": [
+              {
+                "color": "#D0D5E6"
+              }
+            ]
+          }
+        },
+        "containerType": "vertical",
+        "cornerRadius": "12,12,12,12",
+        "margin": "0,16,16,16"
+      },
+      "vertical-adtech-widget-container-style": {
+        "containerType": "vertical",
+        "cornerRadius": "12,12,12,12",
+        "margin": "8,16,8,16"
+      },
+      "vertical-plain-container-style": {
+        "containerType": "vertical"
+      },
+      "vertical-tvod-carousel-item-style": {
+        "containerType": "vertical",
+        "margin": "0,0,16,16",
+        "weight": 1
+      },
+      "vertical-widget-container-style": {
+        "containerType": "vertical",
+        "margin": "16,0,16,0"
+      },
+      "week-grid-item-style": {
+        "margin": "0,0,0,0",
+        "styleId": "category-grid-item-style"
+      },
+      "widget-header-container-style": {
+        "containerType": "horizontal",
+        "font": "subtitle-large",
+        "fontColor": "#222222",
+        "margin": "0,16,0,16",
+        "weightSum": 1
+      },
+      "widget-header-title-style": {
+        "containerType": "vertical",
+        "weight": 1
+      },
+      "widget-subtitle-text-style": {
+        "font": "small-regular",
+        "fontColor": "#666666",
+        "margin": "2,0,0,0"
+      },
+      "widget-title-text-style": {
+        "font": "large-medium",
+        "fontColor": "#222222"
+      }
     }
   }
 }
